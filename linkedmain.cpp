@@ -6,11 +6,13 @@ class student
 string rollno;
 string sapid;
 string name;
+string specialization; //added to commit 2 to make a better platform
 student()
 {
 rollno="R171217041";
 sapid="500060720";
-name="Nishkarsh Raj Khare";	
+name="Nishkarsh Raj Khare";
+specialization="DevOps";	
 }	
 void insert()
 {
@@ -20,12 +22,15 @@ void insert()
 	cin>>sapid;
 	cout<<"Enter the rollno of the student"<<endl;
 	cin>>rollno;
+	cout<<"Enter the Specialization of the student"<<endl;
+	cin>>specialization;
 }
 void show()
 {
 	cout<<"Name of the student is :"<<name<<endl;
 	cout<<"Roll Number of the student is :"<<rollno<<endl;
 	cout<<"Sapid of the student is :"<<sapid<<endl;
+	cout<<"Specialization of the student is :"<<specialization<<endl;
 }
 };
 int main()
