@@ -12,8 +12,8 @@ student()
 rollno="R171217041";
 sapid="500060720";
 name="Nishkarsh Raj Khare";
-specialization="DevOps";	
-}	
+specialization="DevOps";
+}
 void insert()
 {
 	cout<<"Enter the name of the person"<<endl;
@@ -61,6 +61,19 @@ int main()
 	switch(choice)
 	{
 		case 1: cout<<"Insertion at Beginning"<<endl;
+		void insertion(student *node)
+{
+	student node start, *previous, *new1;
+	nw = start.next;
+	previous = &start;
+	new1 = new student;
+	new1->next = next ;
+	previous->next = new1;
+	cout<<"\n Input the first student details: ");
+	cin>>new1->insert());
+
+}
+
 			break;
 		case 2: cout<<"Insertion at End"<<endl;
 			break;
@@ -78,6 +91,6 @@ int main()
 			break;
 		default: cout<<"Wrong Choice! Please Try Again"<<endl;
 	}
-    }while(quit!=1);  
+    }while(quit!=1);
 	return 0;
 }
