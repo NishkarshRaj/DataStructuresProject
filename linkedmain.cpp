@@ -43,5 +43,41 @@ int main()
 	node->insert();
 	cout<<"Lets see the details of first node"<<endl;
 	node->show();
+	//creation of menu on commit 3
+	int quit=0,choice;
+	do
+	{
+	cout<<"\t\t\t\tOption Menu\n\n"<<endl;
+	cout<<"1) Insertion at Beginning"<<endl;
+	cout<<"2) Insertion at End"<<endl;
+	cout<<"3) Insertion at any point"<<endl;
+	cout<<"4) Deletion at Beginning"<<endl;
+	cout<<"5) Deleltion at end"<<endl;
+	cout<<"6) Deletion at any point"<<endl;
+	cout<<"7) Traversal of nodes"<<endl;
+	cout<<"8) Quit"<<endl;
+	cout<<"Enter your choice"<<endl;
+	cin>>choice;
+	switch(choice)
+	{
+		case 1: cout<<"Insertion at Beginning"<<endl;
+			break;
+		case 2: cout<<"Insertion at End"<<endl;
+			break;
+		case 3: cout<<"Insertion at any point"<<endl;
+			break;
+		case 4: cout<<"Deletion at beginning"<<endl;
+			break;
+		case 5: cout<<"Deletion at End"<<endl;
+			break;
+		case 6: cout<<"Deletion anywhere"<<endl;
+			break;
+		case 7: cout<<"Traversal"<<endl;
+			break;
+		case 8: quit=1;
+			break;
+		default: cout<<"Wrong Choice! Please Try Again"<<endl;
+	}
+    }while(quit!=1);  
 	return 0;
 }
