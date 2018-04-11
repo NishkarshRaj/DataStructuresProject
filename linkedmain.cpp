@@ -9,6 +9,7 @@ string rollno;
 string sapid;
 string name;
 string specialization; //added to commit 2 to make a better platform
+student *next; 
 student()
 {
 rollno="R171217041";
@@ -44,8 +45,10 @@ int main()
 	node=new student;
 	cout<<"Lets insert the first node data"<<endl;
 	node->insert();
+	node->next=NULL;
 	cout<<"Lets see the details of first node"<<endl;
 	node->show();
+	start=node;
 	//creation of menu on commit 3
 	int quit=0,choice;
 	do
