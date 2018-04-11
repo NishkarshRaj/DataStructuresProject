@@ -1,5 +1,7 @@
+
 #include<iostream>
 using namespace std;
+
 class student
 {
 	public:
@@ -32,6 +34,7 @@ void show()
 	cout<<"Sapid of the student is :"<<sapid<<endl;
 	cout<<"Specialization of the student is :"<<specialization<<endl;
 }
+}
 };
 int main()
 {
@@ -52,7 +55,7 @@ int main()
 	cout<<"2) Insertion at End"<<endl;
 	cout<<"3) Insertion at any point"<<endl;
 	cout<<"4) Deletion at Beginning"<<endl;
-	cout<<"5) Deleltion at end"<<endl;
+	cout<<"5) Deletion at end"<<endl;
 	cout<<"6) Deletion at any point"<<endl;
 	cout<<"7) Traversal of nodes"<<endl;
 	cout<<"8) Quit"<<endl;
@@ -61,20 +64,7 @@ int main()
 	switch(choice)
 	{
 		case 1: cout<<"Insertion at Beginning"<<endl;
-		void insertion(student *node)
-{
-	student node start, *previous, *new1;
-	nw = start.next;
-	previous = &start;
-	new1 = new student;
-	new1->next = next ;
-	previous->next = new1;
-	cout<<"\n Input the first student details: ");
-	cin>>new1->insert());
-
-}
-
-			break;
+		    break;
 		case 2: cout<<"Insertion at End"<<endl;
 			break;
 		case 3: cout<<"Insertion at any point"<<endl;
@@ -94,3 +84,4 @@ int main()
     }while(quit!=1);
 	return 0;
 }
+

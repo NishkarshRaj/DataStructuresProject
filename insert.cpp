@@ -7,7 +7,6 @@ void insertion(student *node)
 	new1->next = next ;
 	previous->next = new1;
 	cout<<"\n Input the first student details: ");
-	cin>>new1->insert());
+	cin>>new1->insert();
 
 }
-
