@@ -35,7 +35,6 @@ void show()
 	cout<<"Sapid of the student is :"<<sapid<<endl;
 	cout<<"Specialization of the student is :"<<specialization<<endl;
 }
-}
 };
 int main()
 {
@@ -67,9 +66,20 @@ int main()
 	switch(choice)
 	{
 		case 1: cout<<"Insertion at Beginning"<<endl;
-		    break;
+                        //Commits done by prajjawal banati//
+                        ptr=new student;
+                        ptr->insert();
+                        ptr->next=start;
+                        start=ptr;
+		        break;
 		case 2: cout<<"Insertion at End"<<endl;
-			break;
+			//Commits done by prajjawal banati//
+                        node=new student;
+                        node->insert();
+                        node->next=NULL;
+                        for(ptr=start;ptr->next!=NULL;ptr=ptr->next)
+                        ptr->next=node;
+                        break;
 		case 3: cout<<"Insertion at any point"<<endl;
 			break;
 		case 4: cout<<"Deletion at beginning"<<endl;
