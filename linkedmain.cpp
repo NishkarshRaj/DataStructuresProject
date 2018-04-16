@@ -68,6 +68,17 @@ int main()
 		case 2: cout<<"Insertion at End"<<endl;
 			break;
 		case 3: cout<<"Insertion at any point"<<endl;
+			cout<<"Enter the name of the student after which you want to make the insertion"<<endl;
+				cin>>n;
+				for(ptr=start;ptr!=NULL;ptr=ptr->next)
+				{
+					if(ptr->name==n)
+					break;
+				}
+				node=new student;
+				node->insert();
+				node->next=ptr->next;
+				ptr->next=node;
 			break;
 		case 4: cout<<"Deletion at beginning"<<endl;
 			break;
