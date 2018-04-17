@@ -1,5 +1,7 @@
+
 #include<iostream>
 using namespace std;
+
 class student
 {
 	public:
@@ -13,8 +15,8 @@ student()
 rollno="R171217041";
 sapid="500060720";
 name="Nishkarsh Raj Khare";
-specialization="DevOps";	
-}	
+specialization="DevOps";
+}
 void insert()
 {
 	cout<<"Enter the name of the person"<<endl;
@@ -55,7 +57,7 @@ int main()
 	cout<<"2) Insertion at End"<<endl;
 	cout<<"3) Insertion at any point"<<endl;
 	cout<<"4) Deletion at Beginning"<<endl;
-	cout<<"5) Deleltion at end"<<endl;
+	cout<<"5) Deletion at end"<<endl;
 	cout<<"6) Deletion at any point"<<endl;
 	cout<<"7) Traversal of nodes"<<endl;
 	cout<<"8) Quit"<<endl;
@@ -64,10 +66,32 @@ int main()
 	switch(choice)
 	{
 		case 1: cout<<"Insertion at Beginning"<<endl;
-			break;
+                        //Commits done by prajjawal banati//
+                        ptr=new student;
+                        ptr->insert();
+                        ptr->next=start;
+                        start=ptr;
+		        break;
 		case 2: cout<<"Insertion at End"<<endl;
-			break;
+			//Commits done by prajjawal banati//
+                        node=new student;
+                        node->insert();
+                        node->next=NULL;
+                        for(ptr=start;ptr->next!=NULL;ptr=ptr->next)
+                        ptr->next=node;
+                        break;
 		case 3: cout<<"Insertion at any point"<<endl;
+			cout<<"Enter the name of the student after which you want to make the insertion"<<endl;
+				cin>>n;
+				for(ptr=start;ptr!=NULL;ptr=ptr->next)
+				{
+					if(ptr->name==n)
+					break;
+				}
+				node=new student;
+				node->insert();
+				node->next=ptr->next;
+				ptr->next=node;
 			break;
 		case 4: cout<<"Deletion at beginning"<<endl;
 			break;
@@ -81,6 +105,7 @@ int main()
 			break;
 		default: cout<<"Wrong Choice! Please Try Again"<<endl;
 	}
-    }while(quit!=1);  
+    }while(quit!=1);
 	return 0;
 }
+
