@@ -74,8 +74,10 @@ int main()
 		        break;
 		case 2: cout<<"Insertion at End"<<endl;
 			//Commits done by prajjawal banati//
+                        //made a new memory allocation//
                         node=new student;
                         node->insert();
+                        //accessing the inserting funtion//
                         node->next=NULL;
                         for(ptr=start;ptr->next!=NULL;ptr=ptr->next)
                         ptr->next=node;
