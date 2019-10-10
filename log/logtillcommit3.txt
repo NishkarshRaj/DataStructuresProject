@@ -1,0 +1,131 @@
+
+500060720@upes-500060720 MINGW64 ~
+$ cd F:
+
+500060720@upes-500060720 MINGW64 /f
+$ ls
+'$RECYCLE.BIN'/   Balor/       collab/                 'F Drive Old'/   GitBranchLab/   msdia80.dll*   project02April/               thor20111080p720pblurayx264ytsag-english-123640.zip
+ ADS_Labs/        BalorClub/   DataStructuresProject/   Git123/         GitLab/         PDS_Labs/      project1/
+ balo111/         BlogBB/      diff_reset/              GitBranch/      Hollywood/      PROJECT/      'System Volume Information'/
+
+500060720@upes-500060720 MINGW64 /f
+$ cd DataStructuresProject/
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ ls
+Contributors_read.txt
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ vi linkedmain.cpp
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ ls
+ Contributors_read.txt   linkedmain.cpp   linkedmain.exe*  'Screenshot (44).png'
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ vi .gitignore
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ ls
+ Contributors_read.txt   linkedmain.cpp   linkedmain.exe*  'Screenshot (44).png'
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git add .
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory.
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .gitignore
+        new file:   Contributors_read.txt
+        new file:   Screenshot (44).png
+        new file:   linkedmain.cpp
+
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git commit -m "Created Linked List first node successfully, image uploaded for reference"
+[master (root-commit) 0d26b57] Created Linked List first node successfully, image uploaded for reference
+ 4 files changed, 76 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Contributors_read.txt
+ create mode 100644 Screenshot (44).png
+ create mode 100644 linkedmain.cpp
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    Screenshot (44).png
+        modified:   linkedmain.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Commit1.png
+        Commit2.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git add .
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        renamed:    Screenshot (44).png -> Commit1.png
+        new file:   Commit2.png
+        modified:   linkedmain.cpp
+
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git commit -m "Linkedmain.cpp updated, specialization is added as data member to make student name more easy to identify"
+[master 79a476d] Linkedmain.cpp updated, specialization is added as data member to make student name more easy to identify
+ 3 files changed, 6 insertions(+), 1 deletion(-)
+ rename Screenshot (44).png => Commit1.png (100%)
+ create mode 100644 Commit2.png
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   linkedmain.cpp
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Commit3.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git add .
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$ git commit -m "Commit 3, added menu to linkedmain.cpp and attached picture of output"
+[master b617a3d] Commit 3, added menu to linkedmain.cpp and attached picture of output
+ 2 files changed, 36 insertions(+)
+ create mode 100644 Commit3.png
+
+500060720@upes-500060720 MINGW64 /f/DataStructuresProject (master)
+$
