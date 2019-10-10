@@ -1,8 +1,0 @@
-Hello everyone my name is prajjawal in this project I had made a branch named as "insert" in 
-which there will be a programme for inserting at the end and beginning. 
-After Wards I will commit and push it in the insert branch which is made 
-in nishkarsh's repo of data structures project.
----------------------------------------------------------------------------
-Thank you
----------------------------------------------------------------------------
-
